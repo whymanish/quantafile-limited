@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroCards = ({ title, category, imageUrl, date }) => (
     <div className="relative snap-center shrink-0">
-      <div className="w-[400px] lg:w-[420px] transition-all duration-200 transform bg-white border border-gray-200 rounded-2xl hover:shadow-lg hover:-translate-y-1">
+      <div className="w-full transition-all duration-200 transform bg-white border border-gray-200 rounded-2xl hover:shadow-lg hover:-translate-y-1">
         <div className="px-4 py-5 sm:p-5">
           <div className="flex items-center">
             <a href="#" title="" className="shrink-0">
@@ -20,7 +20,6 @@ const HeroCards = ({ title, category, imageUrl, date }) => (
                   {title}
                 </a>
               </p>
-              <p className="mt-2 text-xs font-medium text-gray-500 lg:text-sm">{date}</p>
             </div>
           </div>
         </div>
