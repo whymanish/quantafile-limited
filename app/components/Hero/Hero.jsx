@@ -8,8 +8,8 @@ const Hero = () => (
             </div>
 
             <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                <div class="max-w-xl mx-auto text-center">
-                    <h1 class="text-3xl mt-40 lg:mt-0 font-bold text-gray-900 sm:text-4xl lg:text-5xl">Helping developers to get their dream job</h1>
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-3xl mt-40 lg:mt-0 font-bold  sm:text-4xl lg:text-6xl ">Going online is now easier with{' '}<span className='text-transparent  bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600'>Quantafile</span> </h1>
                     <p class="max-w-md mx-auto mt-6 text-base font-normal leading-7 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.</p>
 
                     <form action="#" method="POST" class="max-w-md mx-auto mt-8 space-y-4 sm:space-x-4 sm:flex sm:space-y-0 sm:items-end">
@@ -27,7 +27,7 @@ const Hero = () => (
                                 type="button"
                                 class="inline-flex relative items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-indigo-600 border border-transparent rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
                             >
-                                Join Now
+                                Get Started
                             </button>
                         </div>
                     </form>
