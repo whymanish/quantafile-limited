@@ -16,7 +16,7 @@ const Service = () => {
       <section>
         <div className="mx-auto max-w-7xl px-5 py-16 md:px-10">
           <div className="mx-auto mb-12 max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl pt-10 font-bold text-white md:text-5xl">WebApps Development</h2>
+            <h2 className="text-3xl  font-bold text-white md:text-5xl">WebApps Development</h2>
             <p className="mt-4 text-sm text-gray-200 sm:text-base">
               Simple &amp; fixed pricing. 30 days money-back guarantee
             </p>
