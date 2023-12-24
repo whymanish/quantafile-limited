@@ -12,14 +12,13 @@ const Service = () => {
   ];
 
   return (
-    <div className="h-screen flex items-center justify-center bg-[#0e1218]">
-      <section>
-        <div className="mx-auto max-w-7xl px-5 py-16 md:px-10">
-          <div className="mx-auto mb-12 max-w-3xl text-center md:mb-12">
+  <div className="flex flex-col items-center justify-center min-h-screen pb-10 bg-[#0e1218]">       <section>
+        <div className="mx-auto max-w-7xl px-5  md:px-10">
+          <div className="mx-auto mb-12 mt-24 lg:mt-0  max-w-3xl text-center md:mb-12">
             <h2 className="text-3xl  font-bold text-white md:text-5xl">WebApps Development</h2>
             <p className="mt-4 text-sm text-gray-200 sm:text-base">
               Simple &amp; fixed pricing. 30 days money-back guarantee
-            </p>
+            </p>s
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-4">
             <PriceCard
