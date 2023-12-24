@@ -1,34 +1,20 @@
+// TestimonialItem.js
 import React from 'react';
 
-const TestimonialItem = ({ quote, author, position, imageSrc }) => {
-  return (
-    <li>
-      <figure className="relative h-full border shadow-xl p-6 bg-gradient-to-r from-gray-100 to-purple-50 rounded-3xl">
-        <blockquote className="relative">
-          <p className="text-base text-gray-600">{quote}</p>
-        </blockquote>
-        <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
-          <div>
-            <div className="text-base font-semibold text-black">{author}</div>
-            <div className="mt-1 text-sm text-gray-500">{position}</div>
-          </div>
-          <div className="overflow-hidden rounded-full bg-gray-50">
-            <img
-              alt=""
-              src={imageSrc}
-              decoding="async"
-              data-nimg="future"
-              className="object-cover h-14 w-14"
-              loading="lazy"
-              style={{ color: 'transparent' }}
-              width="56"
-              height="56"
-            />
-          </div>
-        </figcaption>
-      </figure>
-    </li>
-  );
-};
+const TestimonialItem = ({ text, imageSrc, name, role }) => (
+  <li >
+    
+    <div className="mb-5 max-w-sm rounded-br-[99px] rounded-tl-[60px] rounded-tr-[99px] border-b border-blue-200  bg-gradient-to-r from-gray-50 to-blue-50/50 px-8 py-6 md:mb-8">
+      <p className="text-[#647084]">{text}</p>
+    </div>
+    <div className="mb-5 flex lg:mb-8">
+      <img src={imageSrc} alt="" className="mr-4 rounded-full h-12 w-12" />
+      <div className="flex flex-col">
+        <h6 className="font-bold">{name}</h6>
+        <p className="text-sm text-[#636262]">{role}</p>
+      </div>
+    </div>
+  </li>
+);
 
 export default TestimonialItem;

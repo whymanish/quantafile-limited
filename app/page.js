@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Service from './components/Service/Service'
 import Projects from './components/PastProjects/Projects'
 import Testimonial from './components/Testimonials/Testimonial'
+import Test from './components/Testimonials/Test'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <Hero/>
     <Service/>
   <Testimonial/>
+
     </>
   )
 }
