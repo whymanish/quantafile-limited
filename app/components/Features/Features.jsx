@@ -20,15 +20,19 @@ const Features = () => {
                     </div>  <div class="flex flex-col items-center justify-center bg-contain bg-center pt-10" style={{ backgroundImage: " url('https://assets.website-files.com/6458c625291a94a195e6cf3a/648825fca218588cb636c341_Group%2048114.png')" }}>
                         <div class="flex flex-col justify-around gap-4 sm:flex-row">
                             <a class="rounded-md border border-solid border-[#d9d9d9] bg-[#c8c8c8] p-6 text-[#222222]" href="#w-tabs-2-data-w-pane-0">
-                                <h5 class="mb-2 text-xl font-bold">Personalized Consultation</h5>
+                            <div className='flex items-center'>
+                            <img width="25" height="25" src="https://img.icons8.com/3d-fluency/94/paper-plane.png" alt="paper-plane"/>
+                                <h5 class="mb-2 text-xl font-bold">Send your requirements</h5>
+                            </div>
+                            
                                 <p class="text-sm">We start by understanding your unique goals and challenges, laying the foundation for a tailored strategy.</p>
                             </a>
                             <a class="rounded-md border border-solid border-[#d9d9d9] bg-white p-6 text-[#222222]" tabindex="-1" href="#w-tabs-2-data-w-pane-1">
-                                <h5 class="mb-2 text-xl font-bold">Strategy Development</h5>
+                                <h5 class="mb-2 text-xl font-bold">Development and Implementation</h5>
                                 <p class="text-sm">We start by understanding your unique goals and challenges, laying the foundation for a tailored strategy.</p>
                             </a>
                             <a class="rounded-md border border-solid border-[#d9d9d9] bg-white p-6 text-[#222222]">
-                                <h5 class="mb-2 text-xl font-bold">Analysis and Reporting</h5>
+                                <h5 class="mb-2 text-xl font-bold">Testing and Deployment</h5>
                                 <p class="text-sm">We start by understanding your unique goals and challenges, laying the foundation for a tailored strategy.</p>
                             </a>
                         </div>
