@@ -33,7 +33,7 @@ const Service = () => {
               title="1"
               price="UI/UX & Frontend Development"
               bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white border shadow-xl"
+              btnBgColor="bg-white border "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >
@@ -46,7 +46,7 @@ const Service = () => {
               title="2"
               price="Backend Development"
               bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white border shadow-xl"
+              btnBgColor="bg-white border "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >
@@ -59,7 +59,7 @@ const Service = () => {
               title="3"
               price="Fullstack Development"
               bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white border shadow-xl"
+              btnBgColor="bg-white border "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >
