@@ -11,7 +11,7 @@ const Service = () => {
   ];
 
   const backgroundImage = {
-    backgroundImage: "url('https://images.unsplash.com/photo-1672009190560-12e7bade8d09?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+    backgroundImage: "url('https://images.unsplash.com/photo-1512998844734-cd2cca565822?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -23,8 +23,8 @@ const Service = () => {
     
         <div className="mx-auto max-w-7xl px-5  md:px-10">
           <div className="mx-auto mb-12 mt-24 lg:mt-0  max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl  font-bold text-gray-50 md:text-5xl">WebApps Development</h2>
-            <p className="mt-4 text-sm text-gray-100 sm:text-base">
+            <h2 className="text-3xl  font-bold text-gray-800 md:text-5xl">WebApps Development</h2>
+            <p className="mt-4 text-sm text-gray-600 sm:text-base">
               Simple &amp; fixed pricing. 30 days money-back guarantee
             </p>
           </div>
