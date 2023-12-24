@@ -1,6 +1,6 @@
 // Service.jsx
 import React from "react";
-import PriceCard from "./PriceCard";
+import ServiceCard from "./ServiceCard";
 import Feature from "./Feature";
 const Service = () => {
   const commonFeatures = [
@@ -11,7 +11,7 @@ const Service = () => {
   ];
 
   const backgroundImage = {
-    backgroundImage: "url('https://images.unsplash.com/photo-1637825891028-564f672aa42c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+    backgroundImage: "url('https://images.unsplash.com/photo-1672009190560-12e7bade8d09?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -29,7 +29,7 @@ const Service = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-4">
-            <PriceCard
+            <ServiceCard
               title="1"
               price="UI/UX & Frontend Development"
               bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 text-white sm:w-full sm:flex-initial"
@@ -40,9 +40,9 @@ const Service = () => {
               {commonFeatures.map((feature, index) => (
                 <Feature key={index} text={feature} />
               ))}
-            </PriceCard>
+            </ServiceCard>
 
-            <PriceCard
+            <ServiceCard
               title="2"
               price="Backend Development"
               bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
@@ -53,9 +53,9 @@ const Service = () => {
               {commonFeatures.map((feature, index) => (
                 <Feature key={index}  text={feature} />
               ))}
-            </PriceCard>
+            </ServiceCard>
 
-            <PriceCard
+            <ServiceCard
               title="3"
               price="Fullstack Development"
               bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
@@ -66,7 +66,7 @@ const Service = () => {
               {commonFeatures.map((feature, index) => (
                 <Feature key={index}  text={feature} />
               ))}
-            </PriceCard>
+            </ServiceCard>
           </div>
         </div>
      

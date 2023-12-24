@@ -1,7 +1,7 @@
 // PricingCard.jsx
 import React from "react";
 
-const PriceCard = ({ title, price, features, bgColor, btnBgColor, btnTextColor }) => {
+const ServiceCard = ({ title, price, features, bgColor, btnBgColor, btnTextColor }) => {
   return (
     <div className={`mx-auto w-full transition-all duration-200 lg:transform lg:hover:shadow-lg lg:hover:-translate-y-4 max-w-md ${bgColor} p-10`}>
       <div className="mb-4 w-fit  rounded-full bg-cyan-50 px-4 py-1.5">
@@ -21,4 +21,4 @@ const PriceCard = ({ title, price, features, bgColor, btnBgColor, btnTextColor }
   );
 };
 
-export default PriceCard;
+export default ServiceCard;
