@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       
-    <footer class="w-full bg-[#f2f4f6] dark:bg-gray-900 py-16">
+    <footer class="w-full bg-white border-t dark:bg-gray-900 py-16">
     <div class="md:px-12 lg:px-28">
       <div class="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
         <img src="https://www.svgrepo.com/show/475684/spotify-color.svg" alt="logo tailus" class="m-auto w-12" />

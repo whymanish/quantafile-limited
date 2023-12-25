@@ -35,7 +35,7 @@ const Service = () => {
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-4">
             <ServiceCard
-              title="1"
+            
               price="UI/UX & Frontend Development"
               bgColor="overflow-hidden rounded-[60px] bg-[#52D3D8] border-2 p-10 text-white sm:w-full sm:flex-initial"
               btnBgColor="bg-white "
@@ -48,7 +48,7 @@ const Service = () => {
             </ServiceCard>
 
             <ServiceCard
-              title="2"
+             
               price="Backend Development"
               bgColor="overflow-hidden rounded-[60px] bg-[#7360DF]   p-10 text-white sm:w-full sm:flex-initial"
               btnBgColor="bg-white  "
@@ -61,7 +61,7 @@ const Service = () => {
             </ServiceCard>
 
             <ServiceCard
-              title="3"
+             
               price="Fullstack Development"
               bgColor="overflow-hidden rounded-[60px] bg-[#191919] border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
               btnBgColor="bg-white "

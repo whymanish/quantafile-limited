@@ -9,6 +9,8 @@ import Features from './components/Features/Features'
 import Team from './components/Team/Team'
 import OfferStrip from './components/OfferStrip'
 import Footer from './components/Footer'
+import FAQ from './components/FAQs/FAQ'
+import FaqCTA from './components/FAQs/FaqCTA'
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
     <Service/>
   <Testimonial/>
   <Features/>
+  <FaqCTA/>
+  <FAQ/>
   <Footer/>
 
     </>

@@ -8,3 +8,7 @@
   background-color: #212121;
   color: #fff;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

@@ -4,8 +4,7 @@ import React from "react";
 const ServiceCard = ({ title, price, features, bgColor, btnBgColor, btnTextColor }) => {
   return (
     <div className={`mx-auto group w-full transition-all duration-200 lg:transform lg:hover:shadow-lg lg:hover:-translate-y-4 max-w-md ${bgColor} p-10`}>
-      <div className="mb-4 w-fit  rounded-full bg-cyan-50 px-4 py-1.5">
-        <p className="text-sm font-bold text-cyan-600">{title}</p>
+      <div className="mb-4 w-fit  rounded-full group-hover:bg-gray-100 group-hover:opacity-100 duration-300 opacity-0 bg-blue-50 px-4 py-1.5">
       </div>
       <h2 className="mb-5 text-3xl tracking-tighter font-semibold md:mb-6 md:text-4xl lg:mb-8 text-white ">
         {price}
