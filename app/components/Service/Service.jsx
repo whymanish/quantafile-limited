@@ -18,13 +18,18 @@ const Service = () => {
   };
 
   return (
-    <section style={backgroundImage}>
-  <div className="flex flex-col items-center justify-center min-h-screen pb-10 ">
+    <section >
+  <div className="flex flex-col items-center justify-center pb-10 ">
     
         <div className="mx-auto max-w-7xl px-5  md:px-10">
-          <div className="mx-auto mb-12 mt-24 lg:mt-0  max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl  font-bold text-gray-100 md:text-5xl">WebApps Development</h2>
-            <p className="mt-4 text-sm text-gray-200 sm:text-base">
+        <div className="mx-auto mb-12  lg:mt-0  max-w-3xl text-center md:mb-12">
+            <h2 className="text-3xl tracking-tighter font-bold text-gray-800 md:text-5xl">
+              WebApps{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+                Development
+              </span>{" "}
+            </h2>
+            <p className="mt-4 text-sm text-gray-600 sm:text-base">
               Simple &amp; fixed pricing. 30 days money-back guarantee
             </p>
           </div>
@@ -32,8 +37,8 @@ const Service = () => {
             <ServiceCard
               title="1"
               price="UI/UX & Frontend Development"
-              bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white border "
+              bgColor="overflow-hidden rounded-[60px] bg-[#52D3D8] border-2 p-10 text-white sm:w-full sm:flex-initial"
+              btnBgColor="bg-white "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >
@@ -45,8 +50,8 @@ const Service = () => {
             <ServiceCard
               title="2"
               price="Backend Development"
-              bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white border "
+              bgColor="overflow-hidden rounded-[60px] bg-[#7360DF]   p-10 text-white sm:w-full sm:flex-initial"
+              btnBgColor="bg-white  "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >
@@ -58,8 +63,8 @@ const Service = () => {
             <ServiceCard
               title="3"
               price="Fullstack Development"
-              bgColor="overflow-hidden rounded-3xl bg-gradient-to-r from-gray-100 to-blue-50 border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white border "
+              bgColor="overflow-hidden rounded-[60px] bg-[#191919] border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
+              btnBgColor="bg-white "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >

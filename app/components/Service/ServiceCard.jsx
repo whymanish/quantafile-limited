@@ -7,10 +7,10 @@ const ServiceCard = ({ title, price, features, bgColor, btnBgColor, btnTextColor
       <div className="mb-4 w-fit  rounded-full bg-cyan-50 px-4 py-1.5">
         <p className="text-sm font-bold text-cyan-600">{title}</p>
       </div>
-      <h2 className="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:mb-8 text-transparent  bg-clip-text bg-gradient-to-r from-cyan-600 to-purple-600 ">
+      <h2 className="mb-5 text-3xl tracking-tighter font-semibold md:mb-6 md:text-4xl lg:mb-8 text-white ">
         {price}
       </h2>
-      <p className="text-body mb-5 font-medium text-gray-900 md:mb-6 lg:mb-8">{features}</p>
+      <p className="text-body mb-5 font-medium text-gray-100 md:mb-6 lg:mb-8">{features}</p>
       <a
         href="#"
         className={`inline-block group-hover:bg-blue-600 group-hover:text-white w-full rounded-3xl ${btnBgColor} px-6 py-3 text-center font-semibold ${btnTextColor}`}

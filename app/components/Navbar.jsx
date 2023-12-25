@@ -34,10 +34,10 @@ const Navbar = () => {
                                 >
                                     <div aria-hidden="true" className="flex space-x-1">
                                         <div aria-hidden="true" className="flex space-x-1">
-                                            <div className="h-4 w-4 rounded-full bg-gray-800 dark:bg-gray-200"></div>
-                                            <div className="h-6 w-2 bg-blue-500 dark:bg-primaryLight"></div>
+                                            <div className="h-4 w-4 rounded-full bg-gray-800 "></div>
+                                            <div className="h-6 w-2 bg-blue-500 "></div>
                                         </div>
-                                        <span className="text-base font-bold text-gray-900  dark:text-white">
+                                        <span className="text-base font-bold text-gray-900  dark:text-black">
                                             Quantafile
                                         </span>{" "}
                                     </div>
@@ -49,17 +49,17 @@ const Navbar = () => {
                                     {isMobileMenuOpen ? (
                                         <div
                                             aria-hidden="true"
-                                            className="m-auto h-0.5 w-6 rounded bg-blue-400 dark:bg-gray-300 transform -rotate-45 translate-x-1 translate-y-1 transition duration-300"
+                                            className="m-auto h-0.5 w-6 rounded bg-blue-400  transform -rotate-45 translate-x-1 translate-y-1 transition duration-300"
                                         ></div>
                                     ) : (
                                         <>
                                             <div
                                                 aria-hidden="true"
-                                                className="m-auto h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300"
+                                                className="m-auto h-0.5 w-6 rounded bg-gray-800 d transition duration-300"
                                             ></div>
                                             <div
                                                 aria-hidden="true"
-                                                className="m-auto mt-2 h-0.5 w-6 rounded bg-gray-800 dark:bg-gray-300 transition duration-300"
+                                                className="m-auto mt-2 h-0.5 w-6 rounded bg-gray-800  transition duration-300"
                                             ></div>
                                         </>
                                     )}
@@ -67,7 +67,7 @@ const Navbar = () => {
                             </div>
                             <div
                                 className={`navmenu ${isMobileMenuOpen ? "block" : "hidden"
-                                    } w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0`}
+                                    } w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white  lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0`}
                             >
                                 <div
                                     className={` lg:pr-4 ${isMobileMenuOpen

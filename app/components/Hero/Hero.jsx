@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroCards from './HeroCards';
 const Hero = () => (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center   justify-center h-screen">
         <section className="relative bg-white">
             <div className="absolute inset-0">
                 <img className="object-cover w-full h-full" src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/5/grid-pattern.png" alt="" />

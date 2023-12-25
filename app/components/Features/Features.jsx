@@ -4,9 +4,9 @@ const Features = () => {
   return (
     <div>
       <section>
-        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 ">
+        <div class="mx-auto w-full max-w-7xl px-5 py-4 md:px-10 ">
           <div className="mx-auto mb-12  lg:mt-0  max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl  font-bold text-gray-800 md:text-5xl">
+            <h2 className="text-3xl tracking-tighter font-bold text-gray-800 md:text-5xl">
               Smooth{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
                 Process

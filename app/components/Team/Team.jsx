@@ -1,37 +1,86 @@
-import React from "react";
-import TeamCard from "./TeamCard";
-import { teamData } from "./teamdata";
-const Team = () => {
-   
-  
-    return (
-      <div>
-        <section className="text-gray-600 dark:text-gray-300 px-5 py-16 md:px-10 body-font">
-          <div className="container px-5 pt-12 mx-auto">
-          <div className="mx-auto mb-12  lg:mt-0  max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl  font-bold text-gray-800 md:text-5xl">
-             Meet our{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
-               Team
-              </span>{" "}
-            </h2>
-            <p className="mt-4 text-sm text-gray-600 sm:text-base">
-              Simple &amp; fixed pricing. 30 days money-back guarantee
-            </p>
-          </div>
-            <div className="max-w-7xl mx-auto">
+import React from 'react'
 
-           
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              {teamData.map((member, index) => (
-                <TeamCard key={index} {...member} />
-              ))}
-            </div>
-            </div>
+const Team = () => {
+  return (
+    <div>
+      
+      <div class="py-20">
+  <div class="container mx-auto px-6 text-center md:px-12">
+    <div class="mb-16">
+      <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+        Tailus blocks leadership
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-8/12">
+        Tailus prides itself not only on award-winning technology, but also on the talent of its
+        people of some of the brightest minds and most experienced executives in business.
+      </p>
+    </div>
+    <div class="grid gap-28 py-20 md:grid-cols-3 md:gap-12">
+      <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
+        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+          <img
+            class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+            src="images/woman1.jpg"
+            alt="woman"
+            loading="lazy"
+            width="640"
+            height="805"
+          />
+        </div>
+        <div class="space-y-4 text-center">
+          <div>
+            <h4 class="text-2xl text-gray-700 dark:text-white">Hentoni Doe</h4>
+            <span class="block text-sm text-gray-500">CEO-Founder</span>
           </div>
-        </section>
+          <a href="#" class="mx-auto block w-max text-primary">View Bio</a>
+        </div>
       </div>
-    );
-  };
-  
-  export default Team;
+
+      <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
+        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+          <img
+            class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+            src="images/woman.jpg"
+            alt="woman"
+            loading="lazy"
+            width="1000"
+            height="667"
+          />
+        </div>
+        <div class="space-y-4 text-center">
+          <div>
+            <h4 class="text-2xl text-gray-700 dark:text-white">Anabelle Doe</h4>
+            <span class="block text-sm text-gray-500">Chief Operations Officer</span>
+          </div>
+          <a href="#" class="mx-auto block w-max text-primary">View Bio</a>
+        </div>
+      </div>
+
+      <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
+        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+          <img
+            class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+            src="images/man.jpg"
+            alt="man"
+            loading="lazy"
+            width="1000"
+            height="667"
+          />
+        </div>
+        <div class="space-y-4 text-center">
+          <div>
+            <h4 class="text-2xl text-gray-700 dark:text-white">Jonathan Doe</h4>
+            <span class="block text-sm text-gray-500">Chief Technical Officer</span>
+          </div>
+          <a href="#" class="mx-auto block w-max text-primary">View Bio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                    
+    </div>
+  )
+}
+
+export default Team

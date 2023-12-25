@@ -7,6 +7,7 @@ import Testimonial from './components/Testimonials/Testimonial'
 import Test from './components/Testimonials/Test'
 import Features from './components/Features/Features'
 import Team from './components/Team/Team'
+import OfferStrip from './components/OfferStrip'
 
 export default function Home() {
   return (
@@ -16,7 +17,6 @@ export default function Home() {
     <Service/>
   <Testimonial/>
   <Features/>
-  <Team/>
 
     </>
   )
