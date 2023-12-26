@@ -89,14 +89,16 @@ const FAQ = () => {
       <section className="bg-[#f2f4f6] overflow-y-auto lg:overflow-hidden rounded-2xl h-screen flex  items-center">
 
         <div className=" mx-auto w-full max-w-7xl px-5 md:px-10">
-          <div className="max-w-7xl text-center mt-28 lg:mt-0 mb-8 md:mb-12 lg:mb-16">
+          <div className="max-w-7xl text-center pt-10 lg:pt-0 mt-40 lg:mt-0 mb-8 md:mb-12 lg:mb-16">
             <h2 className="text-3xl  tracking-tighter font-bold text-gray-800 md:text-5xl">
               General{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
                 FAQs
               </span>
             </h2>
-
+            <p className="mt-4 text-sm text-gray-600 sm:text-base">
+            Simple &amp; fixed pricing. 30 days money-back guarantee
+          </p>
           </div>
 
           <div className="flex flex-col items-start lg:flex-row lg:space-x-20">
@@ -121,7 +123,7 @@ const FAQ = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mb-6 mt-8 h-[0.5px] w-full bg-gray-200"></div>
+                <div className="mb-6 mt-2 h-[0.5px] w-full bg-gray-200"></div>
                 <a
                   href="#"
                   className="inline-block rounded-full items-center bg-blue-500 px-6 py-3 text-center font-semibold text-white"
