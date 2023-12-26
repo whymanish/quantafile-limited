@@ -81,11 +81,11 @@ const Navbar = () => {
                                                 <span className="">Home</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#" className="md:px-4">
+                                        <Link href="/components/About">
+                                            <li className="md:px-4">
                                                 <span>About us</span>
-                                            </a>
-                                        </li>
+                                            </li>
+                                        </Link>
                                         <li>
                                             <a href="#" className="md:px-4">
                                                 <span>Contact us</span>
