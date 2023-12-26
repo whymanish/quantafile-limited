@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const FaqCTA = () => {
   return (
     <div>
@@ -39,11 +39,11 @@ const FaqCTA = () => {
                 </ul>
               </div>
               <div class="flex flex-col items-center justify-center gap-2 mx-auto mt-4 md:flex-row">
-                <button class="inline-flex items-center group justify-center w-full h-12 gap-3 px-5 py-3 bg-[#7360DF] md:w-auto rounded-xl hover:bg-gray-200 focus:outline-none">
+                <Link href="/components/FAQs"><button class="inline-flex items-center group justify-center w-full h-12 gap-3 px-5 py-3 bg-[#7360DF] md:w-auto rounded-xl hover:bg-gray-200 focus:outline-none">
                   <span class="text-md text-white  group-hover:text-black transition duration-300  font-bold">
                     Checkout our FAQs
                   </span>
-                </button>
+                </button></Link>
               </div>
             </div>
           </div>
