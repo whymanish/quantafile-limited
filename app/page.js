@@ -22,7 +22,6 @@ export default function Home() {
   <Testimonial/>
   <Features/>
   <FaqCTA/>
-  <FAQ/>
   <Footer/>
 
     </>
