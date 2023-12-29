@@ -3,7 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service/Service";
 import Testimonial from "./components/Testimonials/Testimonial";
-import Features from "./components/Features/Features";
+import Process from "./components/Process/Process";
 import Footer from "./components/Footer/Footer";
 import FaqCTA from "./components/FAQs/FaqCTA/FaqCTA";
 
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <Service />
       <Testimonial />
-      <Features />
+      <Process />
       <FaqCTA />
       <Footer />
     </>
