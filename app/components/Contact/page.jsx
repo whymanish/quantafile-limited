@@ -63,7 +63,7 @@ const page = () => {
                   />
                 </label>
                 <button className="btn btn-neutral inline-block mt-6 w-full cursor-pointer  px-6 py-4 text-center font-semibold text-white transition">
-                  Neutral
+               Send Message
                 </button>
               </form>
             </div>
