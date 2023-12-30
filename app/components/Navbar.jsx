@@ -1,6 +1,6 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
+import React, { useState } from "react";
+
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -10,94 +10,99 @@ const Navbar = () => {
 
   return (
     <div>
-      <header>
-        <input
-          type="checkbox"
-          name="hbr"
-          id="hbr"
-          className="hbr peer absolute -left-full" // Set off-screen to hide without affecting the layout
-          aria-hidden="true"
-          checked={isMobileMenuOpen}
-          onChange={toggleMobileMenu}
-        />
+      <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-transparent fixed lg:relative backdrop-blur text-sm py-4 dark:bg-gray-800">
         <nav
-          className={`fixed z-20 py-2 lg:py-4  w-full  bg-transparent  backdrop-blur navbar  shadow-gray-600/5 ${
-            isMobileMenuOpen ? "peer-checked:navbar-active" : ""
-          } md:relative md:bg-gray-50  dark:shadow-none`}
+          className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+          aria-label="Global"
         >
-          <div className="xl:container m-auto px-6">
-            <div className="flex flex-wrap justify-center items-center  gap-6 md:py-3 md:gap-0">
-              <div className="w-full flex justify-between items-center lg:w-auto lg:pl-4">
-                <Link
-                  href="/"
-                  aria-label="logo"
-                  className="flex space-x-2 items-center"
-                >
-                  <div aria-hidden="true" className="flex space-x-1">
-                    <div aria-hidden="true" className="flex space-x-1">
-                      <div className="h-4 w-4 rounded-full bg-gray-800 "></div>
-                      <div className="h-6 w-2 bg-blue-500 "></div>
-                    </div>
-                    <span className="text-base font-bold text-gray-900  dark:text-black">
-                      Quantafile
-                    </span>{" "}
-                  </div>
-                </Link>
-                <label
-                  htmlFor="hbr"
-                  className="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
-                >
-                  {isMobileMenuOpen ? (
-                    <div
-                      aria-hidden="true"
-                      className="m-auto h-0.5 w-6 rounded bg-blue-400  transform -rotate-45 translate-x-1 translate-y-1 transition duration-300"
-                    ></div>
-                  ) : (
-                    <>
-                      <div
-                        aria-hidden="true"
-                        className="m-auto h-0.5 w-6 rounded bg-gray-800 d transition duration-300"
-                      ></div>
-                      <div
-                        aria-hidden="true"
-                        className="m-auto mt-2 h-0.5 w-6 rounded bg-gray-800  transition duration-300"
-                      ></div>
-                    </>
-                  )}
-                </label>
-              </div>
-              <div
-                className={`navmenu ${
-                  isMobileMenuOpen ? "block" : "hidden"
-                } w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-300 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white  lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0`}
+          <div class="flex items-center justify-between">
+            <a
+              class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white"
+              href="#"
+            >
+              <svg
+                class="w-10 h-auto"
+                width="100"
+                height="100"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div
-                  className={` lg:pr-4 ${
-                    isMobileMenuOpen
-                      ? "block text-gray-800 md:px-4  transition "
-                      : "block text-gray-800 md:px-4 transition"
-                  }`}
-                >
-                  <ul className="space-y-6 tracking-wide font-semibold  lg:text-md lg:flex lg:space-y-0">
-                    <Link href="/components/About">
-                      <li className="md:px-4 mb-2 lg:mb-0">
-                        <span>Home</span>
-                      </li>
-                    </Link>
+                <rect width="100" height="100" rx="10" fill="black" />
+                <path
+                  d="M37.656 68V31.6364H51.5764C54.2043 31.6364 56.3882 32.0507 58.1283 32.8793C59.8802 33.696 61.1882 34.8146 62.0523 36.2351C62.9282 37.6555 63.3662 39.2654 63.3662 41.0646C63.3662 42.5443 63.0821 43.8108 62.5139 44.8643C61.9458 45.906 61.1823 46.7524 60.2235 47.4034C59.2646 48.0544 58.1934 48.522 57.0097 48.8061V49.1612C58.2999 49.2322 59.5369 49.6288 60.7206 50.3509C61.9162 51.0611 62.8927 52.0672 63.6503 53.3693C64.4079 54.6714 64.7867 56.2457 64.7867 58.0923C64.7867 59.9744 64.3309 61.6671 63.4195 63.1705C62.508 64.6619 61.1349 65.8397 59.3002 66.7038C57.4654 67.5679 55.1572 68 52.3754 68H37.656ZM44.2433 62.4957H51.3279C53.719 62.4957 55.4413 62.04 56.4948 61.1286C57.5601 60.2053 58.0928 59.0215 58.0928 57.5774C58.0928 56.5002 57.8264 55.5296 57.2938 54.6655C56.7611 53.7895 56.0035 53.103 55.021 52.6058C54.0386 52.0968 52.8667 51.8423 51.5054 51.8423H44.2433V62.4957ZM44.2433 47.1016H50.7597C51.896 47.1016 52.92 46.8944 53.8314 46.4801C54.7429 46.054 55.459 45.4562 55.9798 44.6868C56.5125 43.9055 56.7789 42.9822 56.7789 41.9169C56.7789 40.5083 56.2817 39.3482 55.2874 38.4368C54.3049 37.5253 52.843 37.0696 50.9017 37.0696H44.2433V47.1016Z"
+                  fill="white"
+                />
+              </svg>
+              Brand
+            </a>
+            <div className="sm:hidden">
+  <button
+    type="button"
+    className={`hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600`}
+    onClick={toggleMobileMenu}
+  >
+    <svg
+      className="hs-collapse-open:hidden flex-shrink-0 w-4 h-4"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {isMobileMenuOpen ? (
+        <>
+          <line key="line1" x1="18" y1="6" x2="6" y2="18" />
+          <line key="line2" x1="6" y1="6" x2="18" y2="18" />
+        </>
+      ) : (
+        <>
+          <line key="line3" x1="3" x2="21" y1="6" y2="6" />
+          <line key="line4" x1="3" x2="21" y1="12" y2="12" />
+          <line key="line5" x1="3" x2="21" y1="18" y2="18" />
+        </>
+      )}
+    </svg>
+  </button>
+</div>
 
-                    <Link href="/components/About ">
-                      <li className="md:px-4 my-2 lg:my-0">
-                        <span>About us</span>
-                      </li>
-                    </Link>
-                    <Link href="/components/About">
-                      <li className="md:px-4">
-                        <span>Contact us</span>
-                      </li>{" "}
-                    </Link>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div
+            id="navbar-image-and-text-1"
+            className={`hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block ${
+              isMobileMenuOpen ? "block" : "hidden"
+            }`}
+          >
+            <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+              <a
+                class="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="#"
+                aria-current="page"
+              >
+                Landing
+              </a>
+              <a
+                class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="#"
+              >
+                Account
+              </a>
+              <a
+                class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="#"
+              >
+                Work
+              </a>
+              <a
+                class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="#"
+              >
+                Blog
+              </a>
             </div>
           </div>
         </nav>
