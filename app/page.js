@@ -6,6 +6,7 @@ import Testimonial from "./components/Testimonials/Testimonial";
 import Process from "./components/Process/Process";
 import Footer from "./components/Footer/Footer";
 import FaqCTA from "./components/FAQs/FaqCTA/FaqCTA";
+import Projects from "./components/PastProjects/Projects";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Service />
+      <Projects/>
       <Testimonial />
       <Process />
       <FaqCTA />

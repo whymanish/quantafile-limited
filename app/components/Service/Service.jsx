@@ -23,7 +23,7 @@ const Service = () => {
     
         <div className="mx-auto max-w-7xl px-5  md:px-10">
         <div className="mx-auto mb-12  lg:mt-0  max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl tracking-tighter font-bold text-gray-800 md:text-5xl">
+            <h2 className="text-3xl tracking-tighter lg:mt-0 mt-10 font-bold text-gray-800 md:text-5xl">
               WebApps{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
                 Development

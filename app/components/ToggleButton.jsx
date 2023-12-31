@@ -16,17 +16,19 @@ const ToggleButton = () => {
   }, [isDay]);
 
   return (
+    <div className='group'>
     <button
-      className="bg-white  w-fit text-white px-3 py-2 border border-gray-200 rounded-xl font-medium"
+      className="bg-white  w-fit text-white px-3 py-2 border border-gray-200 rounded-full font-medium"
       aria-current="page"
       onClick={handleButtonClick}
     >
       <img
         src={isDay ? dayIcon : nightIcon}
-        className="w-4 h-5"
+        className="w-4 group-hover:rotate-90 transition duration-300 h-5"
         alt={isDay ? 'Day Icon' : 'Night Icon'}
       />
     </button>
+    </div>
   );
 };
 

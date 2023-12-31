@@ -3,24 +3,29 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <section>
-                <div class="h-full px-8 py-24 mx-auto lg:py-32 md:px-12 lg:px-32 max-w-7xl">
-                  <div class="text-center">
-                    <p class="text-4xl font-semibold leading-relaxed tracking-tighter text-gray-800 lg:text-7xl">
-                      Building one pagers together,
-                      <span class="text-blue-500 lg:block">wherever and anywhere</span>
-                    </p>
-                    <p class="mt-4 text-base text-gray-500">
-                      The fastest method for working together
-                      <span class="lg:block"> on staging and temporary environments.</span>
-                    </p>
-                    <div class="flex flex-col items-center justify-center gap-3 mt-10 md:flex-row">
-                      <a class="flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-semibold text-white transition-all bg-blue-500 rounded-lg hover:bg-blue-600 md:w-auto" href="/#features">Learn more</a><a class="flex items-center justify-center w-full h-10 px-4 py-2 text-sm text-blue-500 transition-all bg-white border border-gray-300 rounded-lg md:w-auto md:font-semibold hover:text-blue-400" href="#_">
-                        Get Saasify now →</a>
-                    </div>
-                  </div>
-                </div>
-              </section>
+      
+      
+      
+      
+<section>
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 ">
+    
+    
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-12">
+      <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="inline-block h-full w-full rounded-2xl object-cover" />
+      <div class="flex flex-col gap-5 rounded-2xl border  border-gray-300 p-10 sm:p-20">
+        <h2 class="text-3xl font-bold md:text-5xl">What we do ?</h2>
+        <p class="text-sm text-[#808080] sm:text-base"> Aliquet risus feugiat in ante metus. Arcu dui vivamus arcu felis bibendum ut. Vestibulum lorem sed risus ultricies tristique nulla. Vitae et leo duis ut diam quam. Bibendum arcu vitae elementum curabitur vitae nunc. Dictumst vestibulum rhoncus est pellentesque. Lectus proin nibh nisl condimentum id. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
+          <br />
+          <br />Massa id neque aliquam vestibulum morbi blandit. Nulla pellentesque dignissim enim sit amet venenatis.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+            
+            
+            
       
         <section className="bg-white">
           <div class="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
