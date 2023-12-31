@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import ToggleButton from "./ToggleButton";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -89,6 +90,7 @@ const Navbar = () => {
               >
                 Contact us
               </Link>
+              <ToggleButton/>
             </div>
           </div>
         </nav>
