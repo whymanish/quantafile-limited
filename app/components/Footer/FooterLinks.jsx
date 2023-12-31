@@ -1,6 +1,6 @@
 // FooterLinks.js
 import React from 'react';
-
+import Link from 'next/link';
 const FooterLinks = () => {
   return (
     <ul
@@ -17,11 +17,11 @@ const FooterLinks = () => {
           Contact us
         </a>
       </li>
-      <li role="listitem">
-        <a href="#" className="hover:text-primary">
+      <Link href="/components/Terms&Condition">
+        <li role="listitem"  className="hover:text-primary">
           T&C
-        </a>
-      </li>
+        </li>
+      </Link>
     </ul>
   );
 };
