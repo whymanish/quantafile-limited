@@ -1,12 +1,15 @@
+'use client'
 import React from "react";
 import HeroCards from "./HeroCards";
+import ReactAnim from '../ReactAnim.json'
+import Lottie from "lottie-react";
 const Hero = () => (
   <div className="flex items-center   justify-center h-screen">
     <div className=" hidden lg:block  ml-4 z-10">
-      <img
-        src="https://www.svgrepo.com/show/354259/react.svg"
+    
+      <Lottie animationData={ReactAnim}
         className="w-10 absolute left-40 top-40 transform -translate-y-1/2  hover:rotate-90 transition duration-300 h-10"
-        alt=""
+       
       />
       <img
         src="https://www.svgrepo.com/show/354259/react.svg"
