@@ -1,21 +1,30 @@
 'use client'
 import React from "react";
 import HeroCards from "./HeroCards";
-import ReactAnim from '../ReactAnim.json'
+import Webdev from "../Webdev.json";
+import Webdevs from "../Webdevs.json";
+import Rocket from "../Rocket.json";
+import Webdevt from "../Webdevt.json";
 import Lottie from "lottie-react";
 const Hero = () => (
   <div className="flex items-center   justify-center h-screen">
     <div className=" hidden lg:block  ml-4 z-10">
     
-      <Lottie animationData={ReactAnim}
-        className="w-10 absolute left-40 top-40 transform -translate-y-1/2  hover:rotate-90 transition duration-300 h-10"
+    
+      <Lottie animationData={Webdev} 
+        className="w-60 absolute   left-16 top-48 transform -translate-y-1/2  transition duration-300 h-60"
        
       />
-      <img
-        src="https://www.svgrepo.com/show/354259/react.svg"
-        className="w-10 absolute left-80 top-60 transform -translate-y-1/2  hover:rotate-90 transition duration-300 h-10"
-        alt=""
+       <Lottie animationData={Rocket} 
+        className="w-48 absolute   left-40 top-96 transform -translate-y-1/2  transition duration-300 h-48"
+       
       />
+      <Lottie animationData={Webdevs} 
+        className="w-48 absolute   right-40 top-48 transform -translate-y-1/2  transition duration-300 h-48"
+       
+      />
+      
+      
     </div>
     <div className="flex items-center justify-center h-screen relative z-0">
       <section className="relative  bg-white">
