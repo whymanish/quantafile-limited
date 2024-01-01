@@ -1,7 +1,8 @@
-// Service.jsx
+'use client'
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import Feature from "./Feature";
+import AOSComponent from "../AOSComponent";
 const Service = () => {
   const commonFeatures = [
     "Premium Component",
@@ -18,6 +19,8 @@ const Service = () => {
   };
 
   return (
+    <AOSComponent animationType="fade-up" duration={800} easing="ease-in-out" once>
+
     <section >
   <div className="flex flex-col items-center justify-center pb-10 ">
     
@@ -77,6 +80,8 @@ const Service = () => {
      
     </div>
     </section>
+    </AOSComponent>
+
   );
 };
 

@@ -3,10 +3,16 @@ import React from "react";
 import HeroCards from "./HeroCards";
 import Webdev from "../Webdev.json";
 import Webdevs from "../Webdevs.json";
-import Rocket from "../Rocket.json";
+import Secure from "../Secure.json";
+import Growth from "../Growth.json";
 import Webdevt from "../Webdevt.json";
 import Lottie from "lottie-react";
-const Hero = () => (
+import AOSComponent from "../AOSComponent";
+const Hero = () => {
+
+  return(
+    <AOSComponent animationType="fade-up" duration={800} easing="ease-in-out" once={false}>
+
   <div className="flex items-center   justify-center h-screen">
     <div className=" hidden lg:block  ml-4 z-10">
     
@@ -15,14 +21,19 @@ const Hero = () => (
         className="w-60 absolute   left-16 top-48 transform -translate-y-1/2  transition duration-300 h-60"
        
       />
-       <Lottie animationData={Rocket} 
+       <Lottie animationData={Secure} 
         className="w-48 absolute   left-40 top-96 transform -translate-y-1/2  transition duration-300 h-48"
        
       />
       <Lottie animationData={Webdevs} 
-        className="w-48 absolute   right-40 top-48 transform -translate-y-1/2  transition duration-300 h-48"
+        className="w-48 absolute   right-16 top-48 transform -translate-y-1/2  transition duration-300 h-48"
        
       />
+      <Lottie animationData={Growth} 
+        className="w-60 absolute   right-40 top-96 transform -translate-y-1/2  transition duration-300 h-60"
+       
+      />
+      
       
       
     </div>
@@ -133,6 +144,8 @@ const Hero = () => (
       </section>
     </div>
   </div>
+  </AOSComponent>
 );
+  };
 
 export default Hero;

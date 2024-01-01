@@ -1,11 +1,14 @@
-// Testimonial.js
+'use client'
 import React from 'react';
 import TestimonialList from './TestimonialList';
 import { testimonials } from './testimonialdata';
+import AOSComponent from '../AOSComponent';
 const Testimonial = () => {
  
 
   return (
+    <AOSComponent animationType="fade-up" duration={800} easing="ease-in-out" once>
+
     <div>
       <section className="flex justify-center">
         <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20 lg:py-24">
@@ -25,6 +28,7 @@ const Testimonial = () => {
         </div>
       </section>
     </div>
+    </AOSComponent>
   );
 };
 

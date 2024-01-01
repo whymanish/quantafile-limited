@@ -1,10 +1,12 @@
-// Projects.js
+'use client'
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import { projectsData } from "./projectdata";
-
+import AOSComponent from "../AOSComponent";
 const Projects = () => {
   return (
+    <AOSComponent animationType="fade-up" duration={800} easing="ease-in-out" once>
+
     <div>
       <section>
         <div className="mx-auto w-full max-w-7xl px-5 pt-16 md:px-10 md:pt-24 lg:pt-32">
@@ -29,6 +31,7 @@ const Projects = () => {
         </div>
       </section>
     </div>
+    </AOSComponent>
   );
 };
 

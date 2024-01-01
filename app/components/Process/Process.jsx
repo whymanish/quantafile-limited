@@ -1,11 +1,13 @@
-// Process.js
+'use client'
 import React from "react";
 import ProcessSection from "./ProcessSection";
 import {sections} from './Processdata'
-
+import AOSComponent from "../AOSComponent";
 const Process = () => {
   
   return (
+    <AOSComponent animationType="fade-up" duration={800} easing="ease-in-out" once>
+
     <div>
       <section>
        
@@ -43,6 +45,7 @@ const Process = () => {
         </div>
       </section>
     </div>
+    </AOSComponent>
   );
 };
 
