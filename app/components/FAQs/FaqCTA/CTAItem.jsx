@@ -7,7 +7,7 @@ const CTAItem = ({ imageSrc, text }) => (
       alt=""
       className="mr-2 inline-block h-4 w-4"
     />
-    <p className="text-black">{text}</p>
+    <p className="text-zinc-700 dark:text-zinc-300">{text}</p>
   </li>
 );
 

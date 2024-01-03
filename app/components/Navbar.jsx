@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="flex flex-wrap sm:justify-start lg:bg-gray-50 sm:flex-nowrap z-50 w-full  fixed lg:relative backdrop-blur text-sm py-4 dark:bg-gray-800">
+      <header className="flex flex-wrap sm:justify-start dark:bg-transparent lg:dark:bg-black lg:bg-gray-50 sm:flex-nowrap z-50 w-full  fixed lg:relative backdrop-blur text-sm py-4 dark:bg-gray-800">
         <nav
           className="max-w-[75rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
           aria-label="Global"
@@ -71,21 +71,21 @@ const Navbar = () => {
             <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
               <Link
                 href="/"
-                class="font-medium text-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                class="font-medium text-gray-600 dark:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 aria-current="page"
               >
                 Home
               </Link>
               <Link
                 href="/components/About"
-                class="font-medium text-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                class="font-medium text-gray-600 dark:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 aria-current="page"
               >
                 About us
               </Link>
               <Link
                 href="/components/Contact"
-                class="font-medium text-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                class="font-medium text-gray-600 dark:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 aria-current="page"
               >
                 Contact us

@@ -26,13 +26,13 @@ const Service = () => {
     
         <div className="mx-auto max-w-7xl px-5  md:px-10">
         <div className="mx-auto mb-12  lg:mt-0  max-w-3xl text-center md:mb-12">
-            <h2 className="text-3xl tracking-tighter lg:mt-0 mt-10 font-bold text-gray-800 md:text-5xl">
+            <h2 className="text-3xl tracking-tighter lg:mt-0 mt-10 font-bold text-zinc-800 dark:text-zinc-200 md:text-5xl">
               WebApps{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
                 Development
               </span>{" "}
             </h2>
-            <p className="mt-4 text-sm text-gray-600 sm:text-base">
+            <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400 sm:text-base">
               Simple &amp; fixed pricing. 30 days money-back guarantee
             </p>
           </div>
@@ -40,9 +40,9 @@ const Service = () => {
             <ServiceCard
             
               price="UI/UX & Frontend Development"
-              bgColor="overflow-hidden rounded-[60px] bg-[#52D3D8] border-2 p-10 text-white sm:w-full sm:flex-initial"
-              btnBgColor="bg-white "
-              btnTextColor="text-black"
+              bgColor="overflow-hidden rounded-[60px] bg-[#52D3D8]  p-10 text-white sm:w-full sm:flex-initial"
+              btnBgColor="bg-white  "
+              btnTextColor="text-black "
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"
             >
               {commonFeatures.map((feature, index) => (
@@ -66,7 +66,7 @@ const Service = () => {
             <ServiceCard
              
               price="Fullstack Development"
-              bgColor="overflow-hidden rounded-[60px] bg-[#191919] border-2 p-10 border-2 p-10 text-white sm:w-full sm:flex-initial"
+              bgColor="overflow-hidden rounded-[60px] bg-[#191919] dark:bg-zinc-900  p-10  p-10 text-white sm:w-full sm:flex-initial"
               btnBgColor="bg-white "
               btnTextColor="text-black"
               features="Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit"

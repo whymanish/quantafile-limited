@@ -8,9 +8,9 @@ const FaqCTA = () => (
   <div>
     <section>
       <div className="px-4 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
-        <div className="p-2 border bg-gray-50 rounded-3xl">
-          <div className="p-6 text-center bg-[#f2f4f6] border shadow-lg md:p-16 rounded-3xl">
-            <p className="text-3xl lg:text-5xl font-semibold tracking-tighter text-black">
+        <div className="p-2 border dark:border-zinc-900 bg-gray-50 dark:bg-black rounded-3xl">
+          <div className="p-6 text-center bg-[#f2f4f6] dark:bg-black border dark:border-zinc-900 shadow-lg md:p-16 rounded-3xl">
+            <p className="text-3xl lg:text-5xl font-semibold tracking-tighter dark:text-zinc-100 text-zinc-700">
               Is there any doubt in your mind?
             </p>
             <div className="mt-10 flex justify-center">

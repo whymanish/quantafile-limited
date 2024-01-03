@@ -2,8 +2,8 @@ import React from "react";
 
 const FaqItem = ({ question, answer, color, rounded, isOpen, onClick }) => (
   <div
-    className={`mb-6 w-full ${isOpen ? "bg-blue-500 text-white duration-300" : `bg-${color} `
-      } text-black overflow-hidden p-6 rounded-${rounded ? "2xl" : "sm"
+    className={`mb-6 w-full ${isOpen ? "bg-blue-500 text-white duration-300" : `bg-${color} dark:bg-black dark:border dark:border-zinc-900 `
+      } text-black dark:text-zinc-300 overflow-hidden p-6 rounded-${rounded ? "2xl" : "sm"
       }`}
   >
     <div

@@ -7,7 +7,7 @@ import FooterText from './FooterText';
 const Footer = () => {
   return (
     <div>
-      <footer className="w-full bg-white border-t dark:bg-gray-900 py-16">
+      <footer className="w-full bg-white border-t dark:border-zinc-700 dark:bg-black py-16">
         <div className="md:px-12 lg:px-28">
           <div className="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
             <FooterLogo />

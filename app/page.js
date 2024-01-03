@@ -11,6 +11,7 @@ import Projects from "./components/PastProjects/Projects";
 export default function Home() {
   return (
     <>
+    <main className="dark:bg-black">
       <Navbar />
       <Hero />
       <Service />
@@ -19,6 +20,7 @@ export default function Home() {
       <Process />
       <FaqCTA />
       <Footer />
+      </main>
     </>
   );
 }

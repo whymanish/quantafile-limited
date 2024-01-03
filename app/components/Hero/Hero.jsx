@@ -38,31 +38,24 @@ const Hero = () => {
       
     </div>
     <div className="flex items-center justify-center h-screen relative z-0">
-      <section className="relative  bg-white">
-        <div className="absolute inset-0">
-          <img
-            className="object-cover w-full h-full"
-            src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/5/grid-pattern.png"
-            alt=""
-          />
-        </div>
+      <section className="relative ">
+        
 
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-3xl mt-40 lg:mt-0 font-bold  sm:text-4xl lg:text-6xl ">
+            <h1 class="text-3xl mt-40 lg:mt-0 font-bold text-zinc-800 dark:text-zinc-100 sm:text-4xl lg:text-6xl ">
               Going online is now easier with{" "}
-              <span className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+              <span className="text-transparent  bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-600">
                 Quantafile
               </span>{" "}
             </h1>
-            <p class="max-w-md mx-auto mt-6 text-base font-normal leading-7 text-gray-500">
+            <p class="max-w-md mx-auto mt-6 dark:text-zinc-400 text-base font-normal leading-7 text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula
               massa in enim luctus. Rutrum arcu.
             </p>
 
-            <form
-              action="#"
-              method="POST"
+            <div
+              
               class="max-w-md mx-auto mt-8 space-y-4 sm:space-x-4 flex justify-center sm:space-y-0 sm:items-end"
             >
               <div class="relative group">
@@ -75,7 +68,7 @@ const Hero = () => {
                   Get Started
                 </button>
               </div>
-            </form>
+            </div>
 
             <ul class="flex items-center justify-center mt-6 space-x-6 sm:space-x-8">
               <li class="flex items-center">
@@ -93,7 +86,7 @@ const Hero = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span class="text-xs font-medium text-gray-900 sm:text-sm">
+                <span class="text-xs font-medium dark:text-zinc-300 text-gray-900 sm:text-sm">
                   {" "}
                   Weekly new articles{" "}
                 </span>
@@ -114,7 +107,7 @@ const Hero = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span class="text-xs font-medium text-gray-900 sm:text-sm">
+                <span class="text-xs font-medium dark:text-zinc-300 text-gray-900 sm:text-sm">
                   {" "}
                   Join other 1600+ Devs{" "}
                 </span>
